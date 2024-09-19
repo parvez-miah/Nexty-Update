@@ -1,0 +1,65 @@
+/* PostNavigation.css */
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.prev-post,
+.next-post {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.prev-post:hover,
+.next-post:hover {
+  color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.prev-post {
+  display: flex;
+  align-items: center;
+}
+
+.next-post {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .post-navigation {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prev-post,
+  .next-post {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .next-post {
+    margin-bottom: 0;
+  }
+}

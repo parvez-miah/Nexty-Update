@@ -1,0 +1,16 @@
+/* ProgressBar styles */
+.progress-bar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #e20c0c;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #d51919; /* You can adjust the color here */
+  transition: width 0.4s ease;
+}
